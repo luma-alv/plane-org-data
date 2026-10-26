@@ -1,14 +1,26 @@
-# Data extraction configuration for Plane organization data.
-
 organization: plane
 
+repository:
+  url: https://github.com/makeplane/plane
+  branch: preview
+
 sources:
-  repository: true
-  issues: true
-  pull_requests: true
-  commits: true
-  releases: true
-  documentation: true
+  github:
+    repository_metadata: true
+    issues: true
+    pull_requests: true
+    commits: true
+    releases: true
+    documentation: true
+
+  plane_workspace:
+    enabled: false
+    projects: true
+    work_items: true
+    comments: true
+    cycles: true
+    modules: true
+    pages: true
 
 paths:
   raw: data/raw
