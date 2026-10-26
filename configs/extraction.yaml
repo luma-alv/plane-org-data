@@ -1,0 +1,20 @@
+# Data extraction configuration for Plane organization data.
+
+organization: plane
+
+sources:
+  repository: true
+  issues: true
+  pull_requests: true
+  commits: true
+  releases: true
+  documentation: true
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+
+output:
+  format: json
+  overwrite: false
